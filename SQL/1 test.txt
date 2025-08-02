@@ -1,0 +1,33 @@
+Q1.      select e_name,salary,from employees order by desc;
+
+Q2.       select  salary from employees limit 5;
+
+Q3.       select * from employees offset 3 limit 5;
+
+Q4.      selec dept_id, count(e_id)"total employees" from employees group by dept_id;
+
+Q5.      select dept_id ,avg(salary) as "average salary" * from employees group by dept_id having avg(salary)>50000;
+
+Q6.      select * from products where pro_id in(select pro_id from products where pro_name"Laptop");
+
+Q7.    select s_name from student where s_name=____;
+
+Q8.    select s_name from student where s_name="A";
+
+Q9.     select orders from orders group by order_month having order_count>100;
+
+Q10.   
+
+Q11.  D) an error message.
+
+Q12.   B)8.
+
+Q13.   D)group by.
+
+Q14.    B) returns all rows from left table matching rows from the right table.
+
+Q15.     B)hello world.
+
+Q16.     select c_regin,o.(total_amount), from customer c inner join order o group by region having count(total_amount)>10000;
+
+Q17.     select b_author,id,s.quantity as"book sold" from books as b inner join sales as a group by author_id on b.book_id=s.book_id having quantity>100;
